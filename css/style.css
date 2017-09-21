@@ -1,0 +1,944 @@
+/* 
+---------------------------------------------
+Typography
+---------------------------------------------
+*/
+
+h1 {
+    font: 500 36px/1em 'Arima Madurai', cursive;
+    text-align: center;
+    color: #8c6239;
+    margin-top: 5%;
+    margin-bottom: 0.75em;
+}
+
+h2 {
+    font: 500 36px/1em 'Arima Madurai', cursive;
+    color: #000;
+    color: #8c6239;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 0.75em;
+}
+
+h3 {
+    font: 400 28px/40px 'Arima Madurai', cursive;
+    color: #000;
+    color: #8c6239;
+    margin: 0.5em 0 0.25em 0;
+}
+
+h4 {
+    font: 400 24px/32px 'Arima Madurai', cursive;
+    color: #000;
+    color: #8c6239;
+    margin: 1em 0 0.5em 0;
+}
+
+h5 {
+    font: 400 1em/1em 'Arima Madurai', cursive;
+    color: #000;
+    padding-bottom: 1em;
+    margin: 0;
+}
+
+p.special-text {
+    font: 500 36px/1.4em 'Arima Madurai', cursive;
+    margin: 0;
+    color: #8c6239;
+}
+
+/* 
+---------------------------------------------
+Global Styles
+---------------------------------------------
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1280px; 
+    font: 300 18px/27px 'Source Sans Pro', sans-serif;
+    color: #636363;
+    width: 100%;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+}
+
+.box {
+    padding: 5%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #636363;
+}
+
+.button {
+    color: #fff;
+    background-color: #ea5480;
+    background-color: #8cc63f;
+    border-radius: 5px;
+    padding: 2.5% 5%;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: rgba(163,58,89,1);
+    background-color: #7eaa39;
+}
+
+.alt-bg {
+    background-color: #f2f2f2;
+}
+
+.focus-bg {
+   background-color: #8c6239; 
+}
+
+/* 
+---------------------------------------------
+Grid
+---------------------------------------------
+*/
+
+.two-column {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.two-column__column {
+    width: 100%;
+}
+
+/*---------------------------------------------------
+Header
+-----------------------------------------------------*/
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?gyd08f');
+    src:  url('../fonts/icomoon.eot?gyd08f#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?gyd08f') format('truetype'),
+    url('../fonts/icomoon.woff?gyd08f') format('woff'),
+    url('../fonts/icomoon.svg?gyd08f#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e5d2";
+  font-size: 30px;
+}
+
+nav {
+    width: 93%;
+    height: 90px;
+    padding: 0;
+    background-color: #fff;
+    margin: 0;
+    font: 400 18px/18px 'Hind', sans-serif;
+    color: #999;
+}
+
+.nav-border {
+    border-bottom: 2px solid #8c6239;
+}
+
+nav .logo {
+    position: absolute;
+    top: 17px;
+    left: 5%;
+}
+
+.logo__img {
+    width: 70%;
+}
+
+nav .login {
+    position: absolute;
+    top: 35px;
+    right: 15%;
+    width: 18px;
+}
+
+.login__text {
+    display: none;
+}
+
+nav .menu-link {
+    position: absolute;
+    top: 30px;
+    right: 5%;
+    color: #999;
+}
+
+.menu-slide {
+    position: absolute;
+    top: 65px;
+    width: 100%;
+    list-style-type: none;
+    background-color: #fff;
+    margin: 0;
+    text-align: left;
+    padding: 0;
+    z-index: 500;
+    display: none;
+    padding-bottom: 7vh;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu-slide li {
+    height: 10vh;
+    padding-top: 7vh;
+    padding-left: 10%;
+}
+
+.menu-slide a:hover,
+.menu-link:hover,
+.menu-slide a.selected {
+    background-color: #8cc63f;
+}
+
+/*---------------------------------------------------
+Footer
+-----------------------------------------------------*/
+
+.footer {
+    padding: 3% 0 2% 0;
+    text-align: center;
+    color: #fff;
+}
+
+.footer__tagline {
+    padding: 1% 0 0 0;
+    margin: 0;
+}
+
+.footer__first-location {
+    float: left;
+    text-align: right;
+    width: 50%;
+    padding-right: 1.25em;
+    border-right: 0.5px solid #fff;
+}
+
+.footer__second-location {
+    float: left;
+    text-align: left;
+    width: 50%;
+    padding-left: 1.25em;
+}
+
+.footer__social-media {
+    clear: both;
+    padding: 1.5em 0 1em 0;
+}
+
+.footer__social-media img {
+    margin: 0 1em;
+}
+
+/*---------------------------------------------------
+Home Page
+-----------------------------------------------------*/
+
+.hero-section {
+    position: relative;
+}
+
+.hero-section__text {
+        display: none;
+    }
+
+.testimonial {
+    display: none;
+    text-align: center;
+}
+
+.testimonial.active {
+    display: block;
+}
+
+.testimonials {
+    position: relative;
+}
+
+.left-scroll,
+.right-scroll {
+    position: absolute;
+    top: 20px;
+}
+
+.left-scroll {
+    left: 30px;
+}
+
+.right-scroll {
+    right: 30px;
+}
+
+.subscribe {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.subscribe__text,
+.subscribe__email,
+.subscribe__action {
+    text-align: center;
+}
+
+.intro-teaser__desc p {
+    margin-bottom: 1.5em;
+}
+
+.links {
+    font-weight: 400;
+}
+
+.features-teaser .link img {
+    width: 30px;
+    margin-top: -4px;
+}
+
+.features-teaser a {
+    color: #636363;
+}
+
+.about__desc p:nth-child(2){
+    margin-bottom: 1.5em;
+}
+
+.camps-teaser-title {
+    margin-top: 1em;
+}
+
+.camps-teaser {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+/*.camps-teaser__item {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}*/
+
+/*.camps-teaser__item__image {
+    width: 100%;
+    max-width: 350px;
+}*/
+
+.promotion--teaser {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    align-items: center;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.promotion--teaser .promotion__contact {
+    width: 55%;
+    text-align: left;
+}
+
+.promotion--teaser__item {
+    width: 30%;
+}
+
+/* 
+---------------------------------------------
+Camps Page
+---------------------------------------------
+*/
+
+.calendar-list {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.calendar-list img {
+    width: 18px;
+    height: 33px;
+    display: block;
+    margin-top: 40px;
+}
+
+.calendar-list > * {
+    margin-right: 4%;
+}
+
+.calendar:nth-child(3),
+.calendar:nth-child(4),
+.calendar:nth-child(5),
+.calendar:nth-child(6),
+.calendar:nth-child(7) {
+    display:none;
+}
+
+div.calendar {
+    width: 112px;
+    height: 112px;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+}
+
+div.calendar-day {
+    height: 31px;
+    background-color: #e5e5e5;
+    font-size: 15px;
+}
+
+div.calendar-date {
+    font-size: 25px;
+    height: 81px;
+    padding-top: 8px;
+}
+
+div.calendar.today .calendar-day {
+    background-color: #8cc63f;
+    color: #fff;
+}
+
+div.calendar.today .calendar-date {
+    background-color: #8c6239;
+    color: #fff;
+}
+
+.faqs-section {
+    margin: 0 0 3% 0;
+}
+
+.faq__arrow {
+    width: 5px;
+    cursor: pointer;
+    margin-top: -14px;
+}
+
+.faq__question {
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.faq__content {
+    display: none;
+    margin: 2% 5%;
+}
+
+.faq__content p {
+    margin-bottom: 0;
+    padding-bottom: 1em;
+}
+
+.faq__arrow.turn {
+    transform: rotate(90deg);
+}
+
+.faq__arrow.turn-back {
+    transform: rotate(0deg);
+}
+
+/*.faq {
+    padding: 10px 15px;
+    border-bottom: 2px solid #fff;
+    background-color: #f2f2f2;
+}*/
+
+.faq {
+    background-color: #f2f2f2;
+}
+
+.faq__header {
+   padding: 10px 15px;
+   border-bottom: 2px solid #fff; 
+   cursor: pointer;
+}
+
+.faq__header:hover {
+    background-color: #8cc63f; 
+}
+
+.faq__header:hover a {
+    color: #fff;
+}
+
+.faq__header p {
+    background-color: #f2f2f2;
+}
+
+.camp__desc li {
+    font-weight: 500;
+}
+
+.camp__desc {
+    padding: 5% 0; 
+}
+
+.camp__desc__info p{
+    font-weight: 300;
+    margin-bottom: 1.5em;
+}
+
+.camps h3 {
+    padding-left: 2vw;
+}
+
+.camps ul {
+    margin: 0;
+}
+
+/* 
+---------------------------------------------
+Parents Page
+---------------------------------------------
+*/
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link {
+    margin: 1em 0;
+    width: 80%;
+    padding-left: 10%;
+}
+
+.link img {
+    width: 5px;
+    margin-top: -4px;
+}
+
+.link a {
+    margin-left: 0.25em;
+}
+
+.directors {
+    padding: 3%;
+}
+
+.directors__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding-left: 0;
+}
+
+.directors__bio {
+    width: 80%;
+    margin-bottom: 3em;
+}
+
+.directors__bio__name,
+.directors__bio__designation {
+    text-align: center;
+}
+
+.directors__bio__detail {
+    display: flex;
+    justify-content: space-between;
+}
+
+.directors__bio__detail__title,
+.directors__bio__detail__desc {
+    margin: 0.5em 0;
+}
+
+.directors__bio__detail__title {
+    width: 35%;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.directors__bio__list {
+    padding: 0;
+}
+
+.directors__bio__detail__desc {
+    width: 60%;
+}
+
+/* 
+---------------------------------------------
+Contact Page
+---------------------------------------------
+*/
+
+.page-header {
+    margin-top: -2%;
+}
+
+.page-header__title--room {
+    margin: 0.5em 1em; 
+}
+
+#map {
+    width: auto;
+    height: 40vh;
+}
+
+.contact {
+    padding: 4% 20% 4% 25%;
+}
+
+.contact__address {
+    padding-left: 15%;
+    padding-right: 5%;
+    text-align: left;
+    float: left;
+}
+
+.contact__street {
+    padding-bottom: 1%;
+    padding-left: 1%;
+    max-width: 175px;
+}
+
+.contact__number {
+    font-weight: 400;
+}
+
+.contact-form {
+    padding: 3% 15% 6% 16%;
+    text-align: center;
+}
+
+.contact-form__input, .contact-form__textarea {
+    border: none;
+    border-bottom: solid 1px #8c6239;
+    background-color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 70vw;
+    min-width: 250px;
+    max-width: 500px;
+    margin-bottom: 2em;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+/* 
+---------------------------------------------
+Media Queries
+---------------------------------------------
+*/
+
+@media only screen and (min-width: 480px) {
+    .calendar:nth-child(3) {
+        display: block;
+    }
+
+    .link {
+        width: 50%;
+        padding-left: 5%;
+    }
+
+    .login {
+        top: 40px;
+    }
+
+    .menu-link {
+        top: 35px;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .box {
+        padding: 5% 10%;
+    }
+
+    .logo__img {
+        width: 85%;
+    }
+    
+    .featured__bio {
+        width: 44%;
+    }
+
+    .contact {
+        padding: 4% 5%;
+    }
+
+    .contact-form {
+        padding-left: 20%;
+        padding-right: 20%; 
+    }
+
+    .contact__address:nth-of-type(1) {
+        border-right: 0.5px solid lightgray;
+    }
+
+    .camps-teaser {
+        justify-content: space-between;
+    }
+
+    .camps-teaser__item {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 4%;
+    }
+
+    .camps-teaser__item__image {
+        width: 40%;
+    }
+
+    .promotion--teaser {
+        justify-content: space-between;
+    }
+
+    .promotion--teaser .promotion__contact {
+        width: 50%;
+        text-align: left;
+    }
+
+    .promotion--teaser__item {
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    h1 {
+        font: 500 48px/1em 'Arima Madurai', cursive;
+        text-align: center;
+        color: #8c6239;
+        margin-top: 5%;
+        margin-bottom: 0.75em;
+    }
+
+    h2 {
+        font: 500 48px/1em 'Arima Madurai', cursive;
+        color: #000;
+        color: #8c6239;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 0.75em;
+    }
+
+    h3 {
+        font: 400 34px/40px 'Arima Madurai', cursive;
+        color: #000;
+        color: #8c6239;
+        margin: 0.5em 0 0.25em 0;
+    }
+
+    h4 {
+        font: 400 26px/32px 'Arima Madurai', cursive;
+        color: #000;
+        color: #8c6239;
+        margin: 1em 0 0.5em 0;
+    }
+
+    h5 {
+        font: 400 1em/1em 'Arima Madurai', cursive;
+        color: #000;
+        padding-bottom: 1em;
+        margin: 0;
+    }
+
+    p.special-text {
+        font: 500 2.25em/1.4em 'Arima Madurai', cursive;
+        margin: 0;
+        color: #8c6239;
+    }
+
+    nav {
+        margin-left: 5%;
+    }
+
+    .hero-section__text {
+        display: block;
+        position: absolute;
+        top: 0em;
+        left: 3em;
+        font: 600 30px/48px 'Arima Madurai', cursive;
+        width: 40%;
+        color: #fff;
+    }
+
+    .logo__img {
+        width: 100%;
+    }
+
+    .menu-link {
+        display: none;
+    }
+
+    nav .login {
+        right: 75px;
+        top: 50px;
+        z-index: 1000;
+    }
+
+    .login img {
+        display: none;
+    }
+
+    .login__text {
+        display: block;
+    }
+    .login__text:hover {
+        color: #8cc63f;
+    }
+
+    .menu-slide {
+        top: 0;
+        left: 400px;
+        height: 60px;
+        padding-bottom: 0;
+        padding-top: 50px;
+        border-bottom: none;
+        display: inline-block !important;
+    }
+
+    .menu-slide li {
+        display: inline-block;
+        padding: 0;
+        padding-right: 30px;
+    }
+
+    .menu-slide a:hover,
+    .menu-link:hover,
+    .menu-slide a.selected {
+        color: #8cc63f;
+        background-color: #fff;
+    }
+
+    .calendar:nth-child(4) {
+        display: block;
+    }
+
+    .two-column__column {
+        width: 50%;
+        padding: 3vh 2vw;
+    }
+
+    .faqs__set {
+        padding: 0 1%;
+    }
+
+    .link {
+        width: 33%;
+        padding-left: 2%;
+    }
+
+    .contact {
+        padding: 4% 18%;
+    }
+
+    .intro__desc p,
+    .history-section p {
+        margin-top: 0;
+    }
+
+    .about__desc p:nth-child(1){
+        margin-top: 0;
+    }
+
+    .camps-teaser {
+        margin-top: 4%;
+    }
+
+    .promotion--teaser {
+        font-size: 36px;
+        line-height: 48px;
+    }
+}
+
+@media only screen and (min-width: 968px) {
+    .box {
+        padding: 5% 10%;
+    }
+
+    .calendar:nth-child(5) {
+        display: block;
+    }
+
+    .directors__bio {
+        width: 40%;
+    }
+
+    .contact-form {
+        padding-left: 28%;
+        padding-right: 25%; 
+    }
+
+    .contact {
+        padding: 4% 20%;
+    }
+
+    .camps-teaser {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 10%;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 4%;
+    }
+
+    .camps-teaser__item {
+        width: 30%;
+        display: block;
+        justify-content: center;
+    }
+
+    .camps-teaser__item__image {
+        width: 100%;
+        max-width: 270px;
+    }
+
+    .promotion--teaser {
+        justify-content: space-around;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
