@@ -1,0 +1,99 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>SNC | Contact</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:300,400%7cSource+Sans+Pro:200,300,400" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div class="container">
+            <header>
+                <nav class="nav-border">
+                    <a class="logo" href="index.html"><img class="logo__img" src="img/logo.png" alt="Logo"></a>
+                    <a href="#menu" class="menu-link">
+                        <span class="icon-menu"></span>
+                    </a>
+                    <ul class="menu-slide">
+                        <li><a href="camps.html">Camps</a></li>
+                        <li><a href="parents.html">Parents</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <a class="login" href="#"><img src="img/login.png" alt="Login"><span class="login__text">Login</span></a>
+                </nav>
+            </header>
+            <div class="page-header box">
+                <h2 class="page-header__title page-header__title--room"> Find the location near you</h2>
+                <div id="map"></div>
+            </div>
+            <div class="contact box clearfix">
+                <div class="alt-bg">
+                    <section class="contact__address grid-med-1-2 grid-full">
+                        <h3> Wisconsin </h3>
+                        <p class="contact__street">W7471 E. Swift Rd Minong, WI 54859</p>
+                        <p class="contact__number">630-654-8036</p>
+                    </section>
+                    <section class="contact__address grid-med-1-2 grid-full">
+                        <h3> Illinois </h3>
+                        <p class="contact__street">25 Baybrook Ln Oak Brook, IL 60523</p>
+                        <p class="contact__number">715-466-5666</p>
+                    </section>
+                </div>
+            </div>
+            <section class="contact-form">
+                <h2> We'd love to hear from you </h2>
+                <p> Give us feedback or get information on catering, online orders and much more.</p>
+                <input class="contact-form__input" type="text" placeholder="NAME">
+                <input class="contact-form__input" type="text" placeholder="PHONE">
+                <input class="contact-form__input" type="text" placeholder="EMAIL">
+                <textarea class="contact-form__textarea" cols="70" maxlength="1000" rows="6" placeholder="MESSAGE"></textarea>
+                <a class="button large" href="#">SUBMIT</a>
+            </section>
+            <footer>
+                <div class="footer focus-bg clearfix">
+                    <a href="#"><img class="footer__logo" src="img/footer-logo.png" alt="Swift Nature Camp"></a>
+                    <p class="footer__tagline"></p>
+                    <ul class="footer__first-location">
+                        <li>630-654-8036</li>
+                        <li>25 Baybrook Ln,</li>
+                        <li>Oak Brook, IL 60523</li>
+                    </ul>
+                    <ul class="footer__second-location">
+                        <li>715-466-5666</li>
+                        <li>W7471 Ernie Swift Rd,</li>
+                        <li>Minong, WI 54859</li>
+                    </ul>
+                    <div class="footer__social-media">
+                        <a href="https://www.facebook.com/SwiftNatureCamp/" target="_blank"><img src="img/img-facebook.png" alt="facebook" height="30"></a>
+                        <a href="https://twitter.com/swiftnaturecamp" target="_blank"><img src="img/img-twitter.png" alt="twitter" height="30"></a>
+                        <a href="https://www.instagram.com/swift_nature_camp/" target="_blank"><img src="img/img-instagram.png" alt="instagram" height="30"></a>
+                    </div>
+                    <small>&copy; 2017 Swift Nature Camp. All rights reserved.</small>
+                </div>
+            </footer>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/map.js"></script>
+        <script async defer 
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4TZb1hOHWBwhZPthGEBIpcWna9dD1Uk0&callback=initMap">
+        </script>
+    </body>
+</html>
