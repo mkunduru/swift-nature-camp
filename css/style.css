@@ -64,8 +64,10 @@ Global Styles
     max-width: 1280px; 
     font: 300 18px/27px 'Source Sans Pro', sans-serif;
     color: #636363;
-    width: 100%;
+    max-width: 1280px;
     overflow: hidden;
+    margin: 0 auto;
+    position: relative;
 }
 
 img {
